@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #DCDCDC;
+
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background-02.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    padding:1 0px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+
+}
+
+nav ul li a{
+    color: #DCDCDC;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DCDCDC;
+    position: absolute; 
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+.header-text span{
+    color: #DCDCDC;
+}
+
+.headshot{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 243px;
+    height: 300px;
+    border-radius:10%;
+}
+
+p{
+    margin: 0 0 50px;
+}
+
+h1{
+    margin: 0 0 20px;
+}
+
+
+
+/* Projects Section */
+
+
+.projectTitle{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+
+}
+.projects {
+    display: inline-block;
+    padding: 0;
+    left: 30%;
+    top: 90%;
+    color: #DCDCDC; 
+    font-size: 20px;
+    position: relative;
+   }
+   
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #DCDCDC;
+   }
+
+.projects ul li a{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #DCDCDC;
+    text-decoration: none;
+   }
+
+
+/* Contact \ Section */
+.contact{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.github{
+    position: absolute;
+    left: 37%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.linkedin{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.email{
+    position: absolute;
+    left: 63%;
+    top: 61%;
+    transform: translate(-50%, -50%);
+}
